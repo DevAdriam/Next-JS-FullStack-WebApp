@@ -10,7 +10,7 @@ import youtube from "../../public/4.png";
 export default function Footer() {
 	const currentYear = new Date().getFullYear();
 	return (
-		<footer className="sm:flex sm:justify-between sm:items-center grid  place-items-center ">
+		<footer className="sm:flex sm:justify-between items-center grid ">
 			<div className=" text-sm text-gray-100/80">@{currentYear} developed.All rights served</div>
 			<ul className="flex items-center justify-between gap-3 mt-3 sm:mt-0">
 				<li>

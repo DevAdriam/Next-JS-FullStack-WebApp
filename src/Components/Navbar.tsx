@@ -15,7 +15,7 @@ export default function Navbar() {
 			</h1>
 
 			<ul
-				className={`px-10 py-5 w-full md:w-max-content md:py-0 bg-stone-800/80 md:bg-transparent  flex justify-between md:flex-row flex-col absolute md:static top-[80px] ${
+				className={`px-10 py-5 w-full md:py-0 bg-stone-800/80 md:bg-transparent flex justify-between md:flex-row flex-col absolute md:static top-[80px] ${
 					nav ? "left-0" : "left-[1000px]"
 				} z-10 transition-all duration-500 items-start md:items-center gap-5 lg:gap-10`}
 			>
