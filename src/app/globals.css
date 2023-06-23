@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	max-width: 100vw;
 	min-height: 100vh;
@@ -42,8 +48,7 @@ nav > ul > li::before {
 	transition: 0.2s width ease-in;
 }
 
-nav > ul > li:hover::before,
-nav > ul > li:hover {
+nav > ul > li:hover::before {
 	width: 100%;
 	opacity: 1;
 }

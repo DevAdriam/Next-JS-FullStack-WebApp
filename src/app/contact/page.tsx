@@ -4,7 +4,7 @@ import contact from "../../../public/contact.png";
 
 export default function Contact() {
 	return (
-		<div className="w-full h-full">
+		<div className="w-full h-full py-14 px-5">
 			<header className="font-bold w-full py-10 text-center capitalize tracking-wide text-gray-200/90 text-4xl">
 				Let's keep in touch
 			</header>

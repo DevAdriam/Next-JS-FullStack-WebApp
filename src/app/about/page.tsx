@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function About() {
 	return (
-		<div className="w-full h-full py-5 px-10 lg:px-0 grid items-center ">
+		<div className="w-full h-full py-14 px-10 lg:px-0 grid items-center ">
 			<figure className="w-full lg:h-[350px] h-[300px] overflow-hidden bg-green-100 relative">
 				<Image
 					src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

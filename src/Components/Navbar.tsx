@@ -1,34 +1,42 @@
+"use client";
+
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../public/free-blog-png-transparent-images-pikpng.png";
+import { useState } from "react";
+
 export default function Navbar() {
+	const [nav, Setnav] = useState(false);
+
 	return (
-		<nav className="w-full flex justify-between items-center ">
+		<nav className="w-full flex justify-between items-center flex-row sticky z-10 top-0 px-10 py-5  bg-transparent shadow-sm shadow-green-400">
 			{/* For logo */}
-			<h1 aria-label="Logo" className="text-2xl font-bold text-white">
+			<h1 aria-label="Logo" className="w-[30%] text-2xl font-bold text-white ">
 				{/* <Image src={logo} alt="logo" width={150} height={150} /> */}
 				<Link href="/">Logo</Link>
 			</h1>
 
-			<ul className="flex justify-between items-center gap-10">
-				<li>
+			<ul
+				className={`px-10 py-5 w-full md:w-max-content md:py-0 bg-stone-800/80 md:bg-transparent  flex justify-between md:flex-row flex-col absolute md:static top-[80px] ${
+					nav ? "left-0" : "left-[1000px]"
+				} z-10 transition-all duration-500 items-start md:items-center gap-5 lg:gap-10`}
+			>
+				<li className="py-2 md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/" className="active">
 						Home
 					</Link>
 				</li>
-				<li>
+				<li className="py-2  md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/portfolio">Portfolio</Link>
 				</li>
-				<li>
+				<li className="py-2  md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/blog">Blog</Link>
 				</li>
-				<li>
+				<li className="py-2  md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/about">About</Link>
 				</li>
-				<li>
+				<li className="py-2  md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/contact">Contact</Link>
 				</li>
-				<li>
+				<li className="py-2  md:py-0 " onClick={() => Setnav(false)}>
 					<Link href="/dashboard">Dashboard</Link>
 				</li>
 
@@ -36,6 +44,13 @@ export default function Navbar() {
 					Logout
 				</button>
 			</ul>
+
+			{/* Hamburger button */}
+			<button className="flex md:hidden flex-col" onClick={() => Setnav(!nav)}>
+				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
+				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
+				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
+			</button>
 		</nav>
 	);
 }
