@@ -46,10 +46,16 @@ export default function Navbar() {
 			</ul>
 
 			{/* Hamburger button */}
-			<button className="flex md:hidden flex-col" onClick={() => Setnav(!nav)}>
-				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
-				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
-				<span className="w-[25px] h-[2px] mt-1 bg-white"></span>
+			<button className="flex md:hidden flex-col " onClick={() => Setnav(!nav)}>
+				<span
+					className={`w-[25px] h-[2px] mt-1 bg-white transition-all duration-400 ${nav && "rotate-[45deg] "}`}
+				></span>
+				<span className={`w-[25px] h-[2px] mt-1 bg-white transition-all duration-400 ${nav && "hidden"}`}></span>
+				<span
+					className={`w-[25px] h-[2px] mt-1 bg-white transition-all duration-400 ${
+						nav && "rotate-[310deg] translate-y-[-5px]"
+					}`}
+				></span>
 			</button>
 		</nav>
 	);
