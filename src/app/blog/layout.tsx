@@ -4,7 +4,7 @@ type Props = {
 
 export default function layout({ children }: Props) {
 	return (
-		<div className="py-14 px-5">
+		<div className="py-28 px-5">
 			<h1 className="font-bold text-4xl text-green-400">Blogs</h1>
 			{children}
 		</div>

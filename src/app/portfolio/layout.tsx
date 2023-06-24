@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import React from "react";
 
 type children = {
 	children: React.ReactNode;
+};
+
+export const metadata: Metadata = {
+	title: "Portfolio",
+	description: "our works",
 };
 
 export default function CategoryHome({ children }: children) {
