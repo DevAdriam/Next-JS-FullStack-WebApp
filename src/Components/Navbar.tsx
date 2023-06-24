@@ -7,7 +7,7 @@ export default function Navbar() {
 	const [nav, Setnav] = useState(false);
 
 	return (
-		<nav className="w-full flex justify-between items-center flex-row fixed z-10 top-0 px-10 py-5  bg-green-400/70 ">
+		<nav className="w-full flex justify-between items-center flex-row relative z-10 top-0 px-10 py-5  bg-green-400/70 ">
 			{/* For logo */}
 			<h1 aria-label="Logo" className="w-[30%] text-2xl font-bold text-white ">
 				{/* <Image src={logo} alt="logo" width={150} height={150} /> */}
@@ -15,7 +15,7 @@ export default function Navbar() {
 			</h1>
 
 			<ul
-				className={`px-10 py-5 w-full md:py-0 bg-green-400/90 md:bg-transparent flex justify-between md:flex-row flex-col absolute md:static top-[80px] ${
+				className={`w-full lg:w-auto bg-green-400/90 md:bg-transparent md:py-0 px-10 py-5  flex justify-between md:flex-row flex-col absolute md:static top-[80px] ${
 					nav ? "left-0" : "left-[1000px]"
 				} z-10 transition-all duration-500 items-start md:items-center gap-5 lg:gap-10`}
 			>
