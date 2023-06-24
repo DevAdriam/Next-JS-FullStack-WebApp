@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 // footer images import
-import facebook from "../../public/1.png";
-import instagram from "../../public/2.png";
-import twitter from "../../public/3.png";
-import youtube from "../../public/4.png";
+import facebook from "../../../public/1.png";
+import instagram from "../../../public/2.png";
+import twitter from "../../../public/3.png";
+import youtube from "../../../public/4.png";
 
 export default function Footer() {
 	const currentYear = new Date().getFullYear();

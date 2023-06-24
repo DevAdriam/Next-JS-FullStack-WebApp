@@ -1,4 +1,4 @@
-import SkeletonPost from "@/Components/skeletons/SkeletonsPost";
+import SkeletonPost from "@/app/Components/skeletons/SkeletonsPost";
 const LoadingSkeleton = () => {
 	const content = Array.from({ length: 10 }).map((i) => {
 		return <SkeletonPost />;
