@@ -12,7 +12,7 @@ export default function Footer() {
 	return (
 		<footer className="w-full relative bottom-0 p-5 flex flex-col md:flex-row md:justify-between justify-center items-center gap-8 ">
 			<div className=" text-sm text-gray-100/80">@{currentYear} developed.All rights served</div>
-			<ul className="flex items-center justify-between gap-3 mt-3 sm:mt-0">
+			<ul className="flex items-center justify-between gap-3 mt-1 sm:mt-0">
 				<li>
 					<Link href="/">
 						<Image src={facebook} width={20} height={20} alt="socials" />

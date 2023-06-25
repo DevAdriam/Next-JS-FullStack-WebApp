@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<main className="w-full lg:w-[80%] lg:h-[100vh] mx-auto  flex items-center justify-between md:flex-row flex-col px-10 py-32 lg:py-0 lg:px-0">
+		<main className="w-full lg:w-[80%] min-h-[100vh] relative z-[-10]  mx-auto  flex items-center justify-between md:flex-row flex-col px-10 py-20 lg:py-0 lg:px-0">
 			<article className="lg:w-[60%] md:w-[80%] w-[100%] flex flex-col gap-10 lg:mr-14 ">
 				<h1 className="title text-5xl font-bold leading-snug">Better design for your digital products</h1>
 				<p>Turning your idea into Reality. We bring together the teams from the global tech industry.</p>
